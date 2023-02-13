@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Handson-OBJECTS</h1>
+    <p>Q1.Create a Function </p><br>
+    <pre>
+        function Check(obj1){
+          obj1.setter = function(){
+            console.log(this.name);
+          }
+           
+        }
+        
+        </pre><br>
+   <p>Q2.Delete a Parameter </p> <br>
+   <pre>
+    function Check(obj1) {
+      delete obj1.rollno;
+      return obj1;
+      
+         
+    }
+    
+    </pre><br>   
+    <p>Q3.Check whether the Package is Dream Package or not </p><br>
+    <pre>
+        function Check(obj1) {
+          if(obj1.salary>500000){
+            return "Dream";
+          }
+          else{
+            return "NotDream";
+          }
+            
+        }
+        
+        </pre><br>
+    <p>Q4.Check whether the Object has a parameter or not </p><br>
+    <pre>
+        function Check(obj1) {
+          let counter=0;
+          for(let v in obj1){
+            counter++;
+          }
+          if(counter>0)
+            return true;
+          return false;
+           
+        }
+        
+        </pre><br>
+    <p>Q5.Merge the Objects</p><br>
+    <pre>
+        function Check(obj1,obj2) {
+          obj1.state=obj2.state;
+          obj1.code=obj2.code;
+          return obj1;
+            
+        }
+        
+        </pre><br>
+    <p>Q6.Object Multiplyer</p><br>
+    <pre>
+        function Check(a,obj1) {
+          obj1.id=obj1.id*a;
+          obj1.houseno=obj1.houseno*a;
+          return obj1;
+        
+        }
+        
+        </pre><br>  
+    <p>Q7.Find the  sum of Object Members</p><br>
+    <pre>
+        function Check(obj1) {
+          let sum=obj1.p1+obj1.p2+obj1.p3;
+          return sum;
+            
+        }
+        
+        
+        </pre><br>              
+    <p>Q8.Check whether the Objects are same or not.</p><br>
+    <pre>
+        function check(obj1,a,b) {
+          if(obj1.name===a&&obj1.id==b){
+            return "true";
+          }
+          else{
+            return "false";
+          }
+            
+        }
+        
+        </pre><br>
+</body>
+</html>
